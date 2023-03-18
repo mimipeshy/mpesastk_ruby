@@ -677,3 +677,309 @@ Processing by MpesasController#stkpush as */*
 Completed 200 OK in 1426ms (Views: 0.5ms | ActiveRecord: 8.7ms | Allocations: 21189)
 
 
+Started POST "/stkpush" for 41.80.113.195 at 2023-03-18 23:50:07 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MpesasController#stkpush as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023233856153715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.3ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.4ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "ma9cNs6gVDLtH8cTXXBKwqBZjd4Z"], ["created_at", "2023-03-18 20:50:08.522145"], ["updated_at", "2023-03-18 20:50:08.522145"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1269ms (Views: 0.3ms | ActiveRecord: 7.5ms | Allocations: 21194)
+
+
+Started POST "/stkpush" for 41.80.113.195 at 2023-03-18 23:50:18 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"phoneNumber"=>"254715859934", "amount"=>"1", "mpesa"=>{"phoneNumber"=>"254715859934", "amount"=>"1"}}
+  [1m[36mAccessToken Load (0.3ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.5ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "w6KFbPU6OniHmbueAiTsq2kQ1emL"], ["created_at", "2023-03-18 20:50:18.757892"], ["updated_at", "2023-03-18 20:50:18.757892"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1247ms (Views: 0.3ms | ActiveRecord: 8.6ms | Allocations: 12050)
+
+
+Started POST "/stkpush" for 41.80.113.195 at 2023-03-18 23:50:35 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"phoneNumber"=>"254715859934", "amount"=>"1", "mpesa"=>{"phoneNumber"=>"254715859934", "amount"=>"1"}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (3.7ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 18]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (1.2ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "KuG42HAhYMedNFh69W5SrmsOev4R"], ["created_at", "2023-03-18 20:50:36.495633"], ["updated_at", "2023-03-18 20:50:36.495633"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1795ms (Views: 0.3ms | ActiveRecord: 15.9ms | Allocations: 11966)
+
+
+Started POST "/callback_url" for 196.201.213.44 at 2023-03-18 23:50:44 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/callback_url"):
+  
+Started POST "/stkpush" for 41.80.113.195 at 2023-03-18 23:51:00 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023233856153715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.5ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 19]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "xNGADqiPQWAcA6lUVM5zTVhaQAnA"], ["created_at", "2023-03-18 20:51:01.550280"], ["updated_at", "2023-03-18 20:51:01.550280"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1062ms (Views: 0.3ms | ActiveRecord: 6.6ms | Allocations: 12390)
+
+
+Started POST "/stkpush" for 41.80.113.195 at 2023-03-18 23:51:24 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023235036914715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.4ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.3ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "ldAGUUlZnt4cvpRrFORyYEDGi3O7"], ["created_at", "2023-03-18 20:51:24.881430"], ["updated_at", "2023-03-18 20:51:24.881430"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 781ms (Views: 0.3ms | ActiveRecord: 5.7ms | Allocations: 11918)
+
+
+Started POST "/stkpush" for 41.80.113.195 at 2023-03-18 23:51:50 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023235036914715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.8ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 21]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.6ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "AJCIuizIv2h7pU1g605cXDRew04o"], ["created_at", "2023-03-18 20:51:50.669943"], ["updated_at", "2023-03-18 20:51:50.669943"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1088ms (Views: 0.3ms | ActiveRecord: 7.5ms | Allocations: 11950)
+
+
+Started POST "/stkpush" for 41.80.113.195 at 2023-03-18 23:52:19 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"phoneNumber"=>"254715859934", "amount"=>"1", "mpesa"=>{"phoneNumber"=>"254715859934", "amount"=>"1"}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.6ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 22]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "9vfRvBjeOeSDhN6r2An9NWf0aG1H"], ["created_at", "2023-03-18 20:52:19.719223"], ["updated_at", "2023-03-18 20:52:19.719223"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1024ms (Views: 0.2ms | ActiveRecord: 7.6ms | Allocations: 11950)
+
+
+Started POST "/stkquery" for 41.80.113.195 at 2023-03-18 23:53:07 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023235036914715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.6ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 23]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.3ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "HAnjsT4rkIAIyuWjzkRGjO5vE1Zd"], ["created_at", "2023-03-18 20:53:07.607804"], ["updated_at", "2023-03-18 20:53:07.607804"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1032ms (Views: 0.2ms | ActiveRecord: 11.4ms | Allocations: 11886)
+
+
+Started POST "/stkquery" for 41.80.113.195 at 2023-03-18 23:53:33 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023235219904715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.3ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.3ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 24]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "Gg6kpI04GmnAczCwliJ3BTtNT8B5"], ["created_at", "2023-03-18 20:53:34.035562"], ["updated_at", "2023-03-18 20:53:34.035562"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 992ms (Views: 0.3ms | ActiveRecord: 6.1ms | Allocations: 11842)
+
+
+Started POST "/stkquery" for 41.80.113.195 at 2023-03-18 23:54:32 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023235219904715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.5ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 25]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "DU9jDcv6Aebh5YYtGzly5kwncjPq"], ["created_at", "2023-03-18 20:54:33.047480"], ["updated_at", "2023-03-18 20:54:33.047480"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1050ms (Views: 0.2ms | ActiveRecord: 9.5ms | Allocations: 11843)
+
+
+Started POST "/stkpush" for 41.80.113.195 at 2023-03-18 23:54:47 +0300
+Processing by MpesasController#stkpush as */*
+  Parameters: {"phoneNumber"=>"254715859934", "amount"=>"1", "mpesa"=>{"phoneNumber"=>"254715859934", "amount"=>"1"}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.4ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 26]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "vAK9ppDDDUltNkOjG9kl6B1zQ6yu"], ["created_at", "2023-03-18 20:54:48.157130"], ["updated_at", "2023-03-18 20:54:48.157130"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1273ms (Views: 0.3ms | ActiveRecord: 8.8ms | Allocations: 11619)
+
+
+Started POST "/stkquery" for 41.80.113.195 at 2023-03-18 23:54:56 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023235219904715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.5ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 27]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "uJ4HGaIYtMfpm4SkCtGYURRo2CYI"], ["created_at", "2023-03-18 20:54:56.412537"], ["updated_at", "2023-03-18 20:54:56.412537"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 618ms (Views: 0.4ms | ActiveRecord: 6.3ms | Allocations: 11854)
+
+
+Started POST "/stkquery" for 41.80.113.195 at 2023-03-18 23:55:14 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"CheckoutRequestID"=>"ws_CO_18032023235219904715859934", "mpesa"=>{}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.6ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 28]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.3ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "Wf0uoMeFuOfS5VNqFT2ZqsiiTXyl"], ["created_at", "2023-03-18 20:55:15.138150"], ["updated_at", "2023-03-18 20:55:15.138150"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1104ms (Views: 0.5ms | ActiveRecord: 7.5ms | Allocations: 11501)
+
+
+Started POST "/stkquery" for 41.80.113.195 at 2023-03-18 23:56:16 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"checkoutRequestID"=>"ws_CO_18032023235219904715859934", "mpesa"=>{"checkoutRequestID"=>"ws_CO_18032023235219904715859934"}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.4ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 29]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.3ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "FA4bU4CSbtQJrBhup7zQlZA3Jyj1"], ["created_at", "2023-03-18 20:56:17.258328"], ["updated_at", "2023-03-18 20:56:17.258328"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 984ms (Views: 0.5ms | ActiveRecord: 5.8ms | Allocations: 11893)
+
+
+Started POST "/stkquery" for 41.80.113.195 at 2023-03-18 23:56:31 +0300
+Processing by MpesasController#stkquery as */*
+  Parameters: {"checkoutRequestID"=>"ws_CO_18032023235219904715859934", "mpesa"=>{"checkoutRequestID"=>"ws_CO_18032023235219904715859934"}}
+  [1m[36mAccessToken Load (0.2ms)[0m  [1m[34mSELECT "access_tokens".* FROM "access_tokens"[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mAccessToken Destroy (0.5ms)[0m  [1m[31mDELETE FROM "access_tokens" WHERE "access_tokens"."id" = ?[0m  [["id", 30]]
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:118:in `get_access_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mAccessToken Create (0.4ms)[0m  [1m[32mINSERT INTO "access_tokens" ("token", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["token", "E6mDSauzYAARp6adhb4Afe0Oe82f"], ["created_at", "2023-03-18 20:56:32.236945"], ["updated_at", "2023-03-18 20:56:32.236945"]]
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mpesas_controller.rb:119:in `get_access_token'
+Completed 200 OK in 1000ms (Views: 0.4ms | ActiveRecord: 6.1ms | Allocations: 11883)
+
+
