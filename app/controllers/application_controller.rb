@@ -20,5 +20,16 @@ class ApplicationController < ActionController::API
     #extracts the access token from the response and 
     #saves it to the database.
     def get_access_token
+        res= generate_acces_token_request()
+        if res.code != 200
+            r= generate_acces_token_request()
+            if res.code != 200
+                raise MpesaError('Unable to generate access token')
+            end
+        end
+        body= JSON.parse(res, {symbolize_names: true})
+        token= body[:access_token]
+        AccessToken.destroy_all()
+        AccessToken.create!(token: token)
     end
 end
