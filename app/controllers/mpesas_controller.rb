@@ -1,7 +1,9 @@
 class MpesasController < ApplicationController
+    
     require 'rest-client'
+
     # stkpush
-    def stkpush
+     def stkpush
         phoneNumber = params[:phoneNumber]
         amount = params[:amount]
         url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
@@ -116,4 +118,6 @@ class MpesasController < ApplicationController
         AccessToken.create!(token: token)
         token
     end
+
+
 end
