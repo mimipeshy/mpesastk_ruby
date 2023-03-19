@@ -1,8 +1,8 @@
 ## Implementing M-pesa STK push and STK push query APIs in Rails API                                        
 
 #### Dependancies
-gem 'rack-cors'
-gem 'rest-client'
+- gem 'rack-cors'
+- gem 'rest-client'
 
 ### Setup 
 #### Daraja
