@@ -57,7 +57,7 @@ This will generate a url that you can use as your callback url.
 
 
 ### Usage
-#### stkpush query
+#### stkpush
 - Start your rails server with 
 ```
  rails s
@@ -89,7 +89,7 @@ This will generate a url that you can use as your callback url.
 
 ![screenshot](./screenshot.png)
  
-## stkquery
+#### stkquery
 - We can use the mpesa query to check if the payment was successful or not.
 - Open postman and make a post request to your ngrok url with the following parameters.
 ```json
