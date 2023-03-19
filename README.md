@@ -1,4 +1,4 @@
-##                                         
+## Implementing M-pesa STK push and STK push query APIs in Rails API                                        
 
 #### Dependancies
 gem 'rack-cors'
